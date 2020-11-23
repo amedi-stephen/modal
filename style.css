@@ -1,0 +1,38 @@
+.body-holder {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    transition: 0.3s ease;
+    visibility: hidden;
+    z-index: -10;
+    overflow: hidden;
+}
+.modal-container {
+    background-color: white;
+    padding: 5px 10px;
+    position: relative;
+    height: 100px;
+    width: 50%;
+
+}
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+.modal-container h3 {
+    display: block;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+}
